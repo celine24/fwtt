@@ -1,0 +1,160 @@
+/*présa pv/scéna*/
+
+.fwtt-pv-resumes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  font-family: arial;
+  color: #8e8a96;
+}
+
+.fwtt-pv-intro {
+  position: relative;
+  width: 180px;
+  height: 300px;
+  border: 1px solid #2b2532;
+  margin: 5px;
+}
+
+.fwtt-pv-label {
+  color: #8a7a98;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.fwtt-pv-intro .fwtt-pv-infos {
+  padding: 4px;
+  color: #cccccc;
+  margin: 5px 0;
+}
+
+.fwtt-pv-intro-bg {
+  position: absolute;
+  width: 180px;
+  height: 300px;
+  padding: 5px;
+  box-sizing: border-box;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 1s linear;
+  background-color: #232029;
+}
+
+.fwtt-pv-intro img {
+  width: 180px;
+  height: 300px;
+}
+
+.fwtt-pv-intro-content {
+  padding: 5px;
+  font-size: 12px;
+  height: 195px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+  line-height: 13px;
+}
+
+.fwtt-pv-name {
+  color: #8a7a98;
+  font-family: "Playfair Display", serif;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.fwtt-pv-infos {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 7px;
+  color: #8e8a96;
+  text-transform: uppercase;
+  background-color: #232029;
+  border-bottom: 1px solid #2b2532;
+  border-left: 1px solid #2b2532;
+  border-right: 1px solid #2b2532;
+  border-top: 1px solid #2b2532;
+  padding: 7px;
+  line-height: 10px;
+}
+
+.fwtt-pv-intro-bg:hover {
+  opacity: 1;
+}
+
+.fwtt-pv-label:after {
+  content: "‹";
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 2px;
+  padding-left: 5px;
+  padding-right: 3px;
+}
+
+.fwtt-pv-link {
+  box-sizing: border-box;
+  background: #b24055;
+  display: block;
+  padding: 5px 2px;
+  width: 100%;
+  text-align: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+}
+
+.fwtt-pv-link a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.fwtt-pv-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #df3556;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.fwtt-pv-link:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*barre de éfilement*/
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3d3544;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #18181a;
+  border-radius: 0px;
+}
