@@ -49,8 +49,8 @@
 
 .fwtt-pv-intro-content {
   padding: 5px;
-  font-size: 12px;
-  height: 195px;
+  font-size: 11px;
+  height: 191px;
   overflow-x: auto;
   margin-bottom: 10px;
   line-height: 13px;
@@ -99,15 +99,15 @@
 .fwtt-pv-link {
   box-sizing: border-box;
   background: #b24055;
-  display: block;
   padding: 5px 2px;
-  width: 100%;
+  width: 170px;
   text-align: center;
   font-size: 9px;
   text-transform: uppercase;
   margin-bottom: 3px;
   letter-spacing: 1px;
-  position: relative;
+  position: absolute;
+  bottom:3px;    
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition: color 1000ms;
